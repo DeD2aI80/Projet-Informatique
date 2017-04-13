@@ -46,7 +46,7 @@ def iFiltre(image, filtre):
             pixels = image[row:row+3,col:col+3]
             
             # Calcul du nouveau pixel :
-            m = np.multiply(pixels, filtre)     # multiplie les éléments 1 à 1 des 2 matrices
+            m = np.multiply(pixels, filtre)  # multiplie les éléments 1 à 1 des 2 matrices
             pixel = abs(int(np.sum(m)))
             
             # Ajout du pixel dans la nouvelle image
